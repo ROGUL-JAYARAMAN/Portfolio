@@ -29,9 +29,13 @@ div#course_n {
 }
 #col_info {
     font-size: larger;
+    text-align: start;
+    padding-left: 10%;
 }
 #hsc_info {
     font-size: larger;
+    text-align: start;
+    padding-left: 10%;
 }
 #hr_edu {
     margin-top: -1px;

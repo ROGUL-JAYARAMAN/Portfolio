@@ -1,0 +1,32 @@
+.projects{
+    padding-left: 1%;
+    grid-template-columns: 25% 75%;
+    background-color: rgb(223, 223, 223);
+    color:black;
+    align-content: center;
+}
+#pro_tit {
+    font-size: 40px;
+    font-style: oblique;
+    font-family: serif;
+    border-right-style: double;
+    text-align: center;
+    align-content: center;
+    border-radius: 100%;
+}
+.pro_head{
+    font-size: x-large;
+    font-family: serif;
+    font-style: oblique;
+    list-style-type: circle;
+}
+.pro_content{
+    font-size:large;
+    font-family: serif;
+    font-style: oblique;
+    padding-left: 5%;
+}
+.pc{
+    padding-left: 10%;
+    list-style-type: circle;
+}
