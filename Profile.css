@@ -1,0 +1,102 @@
+body {
+    display: block;
+    margin: 1%;
+    background-color: rgb(0, 0, 0);
+    user-select: auto !important;
+}
+.my_profile{
+    display: flex;
+    padding-top: 8%;
+    flex-wrap: wrap;
+    margin-bottom:-7%;
+}
+.info{
+    display: grid;
+    margin-left: 77px;
+}
+.mail_flex {
+    display: flex;
+    margin-bottom: -8px;
+    margin-left: 7px;
+}
+.contact_logo{
+    padding-left: 54px;
+}
+.my_info{
+    display:block;
+    margin-right: auto;
+}
+.contact_title {
+    margin-right: 89px;
+}
+#git_ref,#linkedin,#resume{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    background-color: none;
+}
+#Linkedin_image{
+    margin-left: 0px;
+}
+.name{
+    margin-left: 105px;
+}
+#name {
+    font-size: 1cm;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    padding-right: 19px;
+    margin-right: 45px;
+    border-right: 650px;
+}
+#git_image {
+    margin-left: 40px;
+}
+.profile{
+    margin-right: 11px;
+    margin-left: 395px;
+}
+.my_profile {
+    background-color: rgb(223, 223, 223);
+    color:rgb(0, 0, 0);
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+    padding-top: 55px;
+    padding-bottom:55px;
+}
+.photo{
+    margin-bottom: -6px;
+    margin-top: -7px;
+}
+.Links{
+    display:flex;
+    padding-left: 22px;
+    padding-top: 18px;
+}
+#git_ref{
+    margin-top: -18px; 
+    padding-left:7px;
+}
+#resume_image {
+    margin-left: 44px;
+}
+#my_photo{
+    height: 190px;
+    width: 100px;
+    border-bottom-right-radius: 20%;
+    border-top-left-radius: 20%;
+}
+.info_hr {
+    margin-top: -5px;
+    margin-bottom: 1px;
+}
+#git_ref:hover,#linkedin:hover,#resume:hover{
+    color:rgb(255, 0, 0);
+    text-shadow:2px 2px 5px rgb(255, 111, 0), 5px 5px 25px  rgb(0, 0, 0), 4px 1px 50px rgb(255, 0, 0);
+    animation: onhover 2s infinite;
+}
+@keyframes onhover{
+    75%{color:rgb(8, 4, 0);}
+    60%{color:rgb(255, 98, 0);}
+    50%{color:rgb(255, 0, 0);}
+    25%{color:rgb(81, 31, 0);}  
+}
