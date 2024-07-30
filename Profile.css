@@ -21,7 +21,7 @@
 }
 
 .email_name , .contact_no{
-    align-content: baseline;
+    align-content: center;
     flex-grow: 1;
 }
 
