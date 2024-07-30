@@ -219,8 +219,19 @@
 
 @media screen and (width < 500px) {    /*  mobile screen   */
 
+    .skills_content{    /* Contain list of skills and sub div */
+        flex-grow: 2;
+        flex-basis: 53%;
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: 10%;
+        font-family: "Zain";
+        align-items: center;
+        padding-left: 3%;
+    }
+
     .skills{    /*maain div */
-        margin-top: 0.4%;
+        margin-top: 2.4%;
         padding-top: 4%;
         padding-bottom: 2%;
         display:flex;
