@@ -1,102 +1,542 @@
-body {
-    display: block;
-    margin: 1%;
-    background-color: rgb(0, 0, 0);
-    user-select: auto !important;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playwrite+BE+WAL:wght@100..400&display=swap');  /* font-family: "Cormorant Garamond", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital@0;1&family=Zain:wght@200;300;400;700;800;900&display=swap'); /* font-family: "Zain", sans-serif; */
+
+.about {   /* Main Div */
+    margin-top: 0.4%;
 }
-.my_profile{
-    display: flex;
-    padding-top: 8%;
-    flex-wrap: wrap;
-    margin-bottom:-7%;
+
+#profile{
+    border-bottom-right-radius: 25%;
+    border-top-left-radius: 25%;
 }
-.info{
-    display: grid;
-    margin-left: 77px;
+
+.email_icon , .contact_icon{
+    align-content: center;
+    flex-grow: 0.3;
 }
-.mail_flex {
-    display: flex;
-    margin-bottom: -8px;
-    margin-left: 7px;
+
+#email_icon , #contact_icon {
+    height: 25px;
+    width: 25px;
 }
-.contact_logo{
-    padding-left: 54px;
+
+.email_name , .contact_no{
+    align-content: baseline;
+    flex-grow: 1;
 }
-.my_info{
-    display:block;
-    margin-right: auto;
+
+#email_name , #contact_no{
+    color:white;
+    font-family: "Zain";
+    font-weight: 400;
+    letter-spacing: 0.3mm;
 }
-.contact_title {
-    margin-right: 89px;
+
+.git_icon , .linkedin_icon , .resume_icon{
+    flex-grow:0.03;
 }
-#git_ref,#linkedin,#resume{
+
+#git_icon , #linkedin_icon , #resume_icon{
+    height: 20px;
+    width: 20px;
+}
+
+.git_link , .linkedin_link , .resume_link{
+    flex-grow: 1;
+    padding-left: 3%;
+    font-weight: 400;
+    letter-spacing: 0.3mm;
+}
+
+#git_link , #linkedin_link , #resume_link{
     text-decoration: none;
-    color:rgb(0, 0, 0);
-    background-color: none;
+    color: white;
+    font-family: "Zain";
 }
-#Linkedin_image{
-    margin-left: 0px;
+
+#profile_hr {  /* hr-tag */
+    margin: 0.3% 0% -0.1% 0%;
 }
-.name{
-    margin-left: 105px;
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and ( width > 2000px) {    /* 4K screen */
+
+    .home{  /* Main Div */
+        margin-top: 0.4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background: linear-gradient(230deg, rgba(92, 67, 67, 0.303) ,rgba(71, 0, 0, 0.474),rgba(0, 0, 0, 0.2),rgba(77, 45, 0, 0.396),rgba(92, 67, 67, 0.303));
+    }
+
+    .profile_img{   /* Inner Div-1 Contain Image */
+        flex-basis: 25%;
+        flex-grow: 1;
+        text-align: right;
+        margin-right: 3%
+    }
+
+    #profile{
+        height:400px;
+    }
+
+    .name{  /* In_Div-1 contain name */
+        flex-grow: 1;
+        flex-basis: 10%;
+        align-content: center;
+        margin: 2% 10%;
+    }
+
+    #name{
+        color: white;
+        font-size: 100px;
+        font-weight: 500;
+        font-family: "Cormorant Garamond";
+        font-variant-caps: petite-caps;
+        letter-spacing: 3.5mm;
+        font-style: oblique;
+        margin: 0% 0%;
+    }
+    
+    .profile_content{   /* Inner Div-2 Contain Sub DIV - Content */
+        flex-basis: 60%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .non_link{  /*Sub_div-1 contain mail and contact */
+        display: flex; 
+        flex-wrap: wrap;
+        flex-grow: 0.1; 
+        margin: 0% 14%;
+    }
+
+    .email_container , .contact_container{ 
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-direction: row;
+        flex-grow: 0.05;
+    }
+
+    .pro_link{  /*  Sub_div-2 contain linkedin,github,resume links */
+        flex-grow: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 0%;
+        margin: 0% 6%;
+    }
+
+    .git_container , .linkedin_container , .resume_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .git_container{
+        flex-basis: 13%;
+        margin: 0% 0% 0% 9.5%;
+    }
+    .linkedin_container{
+        flex-basis: 15%;
+    }
+    .resume_container{
+        flex-basis: 15%;
+    }
+
+    #email_icon , #contact_icon {
+        height: 40px;
+        width: 40px;
+    }
+    #git_icon , #linkedin_icon , #resume_icon{
+        height: 30px;
+        width: 30px;
+    }
+    #email_name , #contact_no{
+        color:white;
+        font-size: xx-large;
+    }
+
+    .git_link , .linkedin_link , .resume_link{
+        flex-grow: 1;
+        margin-top: -1.5%;
+        padding-left: 3%;
+        font-weight: 400;
+        letter-spacing: 0.3mm;
+    }    
+
+    #git_link , #linkedin_link , #resume_link{
+        text-decoration: none;
+        color: white;
+        font-size: xx-large;
+    }
+    
 }
-#name {
-    font-size: 1cm;
-    margin-top: 20px;
-    margin-bottom: 24px;
-    padding-right: 19px;
-    margin-right: 45px;
-    border-right: 650px;
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media all and ( width >= 1024px) and (width <= 2000px) {    /* lap screen */
+
+    .home{  /* Main Div */
+        margin-top: 0.4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background: linear-gradient(230deg, rgba(92, 67, 67, 0.303) ,rgba(71, 0, 0, 0.474),rgba(0, 0, 0, 0.204),rgba(77, 45, 0, 0.396),rgba(92, 67, 67, 0.303));
+    }
+
+    .profile_img{   /* Inner Div-1 Contain Image */
+        flex-basis: 25%;
+        flex-grow: 1;
+        text-align: right;
+        margin-right: 3%
+    }
+
+    .name{  /* In_Div-1 contain name */
+        flex-grow: 1;
+        flex-basis: 10%;
+        align-content: center;
+        margin: 0% 6%;
+    }
+
+    #name{
+        color:white;
+        font-size:xxx-large;
+        font-weight: 500;
+        font-family: "Cormorant Garamond";
+        font-variant-caps: petite-caps;
+        letter-spacing: 1.5mm;
+        font-style: oblique;
+        margin:0% 0%
+    }
+    
+    .profile_content{   /* Inner Div-2 Contain Sub DIV - Content */
+        flex-basis: 60%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .non_link{  /*Sub_div-1 contain mail and contact */
+        display: flex; 
+        flex-wrap: wrap;
+        flex-grow: 0.1; 
+        margin: 0% 5.3%;
+    }
+
+    .email_container , .contact_container{ 
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-direction: row;
+        flex-grow: 0.05;
+    }
+
+    .pro_link{  /*  Sub_div-2 contain linkedin,github,resume links */
+        flex-grow: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 0%;
+        margin: 0% 6%;
+    }
+
+    .git_container , .linkedin_container , .resume_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .git_container{
+        flex-basis: 15%;
+        margin: 0% 0% 0% 1%;
+    }
+    .linkedin_container{
+        flex-basis: 16%;
+    }
+    .resume_container{
+        flex-basis: 15%;
+    }
 }
-#git_image {
-    margin-left: 40px;
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (width >= 768px) and ( width < 1024px ) {    /* tab screen */
+
+    .home{  /* Main Div */
+        margin-top: 0.4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background: linear-gradient(230deg, rgba(92, 67, 67, 0.303) ,rgba(71, 0, 0, 0.474),rgba(0, 0, 0, 0.215),rgba(77, 45, 0, 0.396),rgba(92, 67, 67, 0.303));
+    }
+
+    .profile_img{   /* Inner Div-1 Contain Image */
+        flex-basis: 25%;
+        flex-grow: 1;
+        text-align: right;
+        margin-right: 3%
+    }
+
+    .name{  /* In_Div-1 contain name */
+        flex-grow: 1;
+        align-content: center;
+        text-align: center;
+    }
+
+    #name{
+        color:white;
+        font-size:xxx-large;
+        font-weight: 500;
+        font-family: "Cormorant Garamond";
+        font-variant-caps: petite-caps;
+        letter-spacing: 1.9mm;
+        font-style: oblique;
+        margin:0% 0%
+    }
+    
+    .profile_content{   /* Inner Div-2 Contain Sub DIV - Content */
+        flex-basis: 60%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .non_link{  /*Sub_div-1 contain mail and contact */
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 0.1;
+        margin-inline-end: 10%;
+        margin-inline-start: 10%;
+        justify-content: center;
+    }
+
+    .email_container , .contact_container{ 
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-direction: row;
+        flex-grow: 1.1;
+    }
+    
+    .pro_link{  /*  Sub_div-2 contain linkedin,github,resume links */
+        flex-grow: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .git_container , .linkedin_container , .resume_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-grow: 0.12;
+    }
+    .git_container{
+        flex-basis: 20%;
+        margin: 0% 0% 0% 1%;
+    }
+    .linkedin_container{
+        flex-basis: 21%;
+    }
+    .resume_container{
+        flex-basis: 15%;
+    }
 }
-.profile{
-    margin-right: 11px;
-    margin-left: 395px;
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (width >= 425px) and ( width < 768px ) {    /* Mobile - L screen */
+
+    .home{  /* Main Div */
+        margin-top: 0.4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background: linear-gradient(230deg, rgba(92, 67, 67, 0.303) ,rgba(71, 0, 0, 0.474),rgba(0, 0, 0, 0.225),rgba(77, 45, 0, 0.396),rgba(92, 67, 67, 0.303));
+    }
+
+    .profile_img{   /* Inner Div-1 Contain Image */
+        text-align: center;
+        margin-right: 4%;
+        margin-top:5%;
+    }
+
+    .name{  /* In_Div-1 contain name */
+        flex-grow: 1;
+        align-content: center;
+        text-align: center;
+    }
+
+    #name{
+        color: white;
+        font-size: xx-large;
+        font-weight: 500;
+        font-family: "Cormorant Garamond";
+        font-variant-caps: petite-caps;
+        letter-spacing: 1.0mm;
+        font-style: oblique;
+        margin: 0% 2% 0% 1%;
+    }
+    
+    .profile_content{   /* Inner Div-2 Contain Sub DIV - Content */
+        flex-basis: 60%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .non_link{  /*Sub_div-1 contain mail and contact */
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 0.1;
+        margin-inline-end: 10%;
+        margin-inline-start: 10%;
+        justify-content: center;
+        margin: 0% 7% 0% 13%;
+    }
+
+    .email_container , .contact_container{ 
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-direction: row;
+        flex-grow: 1.1;
+    }
+    .contact_no {
+        margin-inline-start: -6%;
+    }
+    
+    .pro_link{  /*  Sub_div-2 contain linkedin,github,resume links */
+        flex-grow: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 1%;
+        margin-left: 10%;
+    }
+
+    .git_container , .linkedin_container , .resume_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-grow: 1.3;
+    }
+    .git_container{
+        flex-basis: 5%;
+        margin: 0% 0% 0% 4%;
+    }
+    .linkedin_container{
+        flex-basis: 10%;
+    }
+    .resume_container{
+        flex-basis: 15%;
+    }
 }
-.my_profile {
-    background-color: rgb(223, 223, 223);
-    color:rgb(0, 0, 0);
-    flex-wrap: wrap;
-    margin-bottom: 6px;
-    padding-top: 55px;
-    padding-bottom:55px;
-}
-.photo{
-    margin-bottom: -6px;
-    margin-top: -7px;
-}
-.Links{
-    display:flex;
-    padding-left: 22px;
-    padding-top: 18px;
-}
-#git_ref{
-    margin-top: -18px; 
-    padding-left:7px;
-}
-#resume_image {
-    margin-left: 44px;
-}
-#my_photo{
-    height: 190px;
-    width: 100px;
-    border-bottom-right-radius: 20%;
-    border-top-left-radius: 20%;
-}
-.info_hr {
-    margin-top: -5px;
-    margin-bottom: 1px;
-}
-#git_ref:hover,#linkedin:hover,#resume:hover{
-    color:rgb(255, 0, 0);
-    text-shadow:2px 2px 5px rgb(255, 111, 0), 5px 5px 25px  rgb(0, 0, 0), 4px 1px 50px rgb(255, 0, 0);
-    animation: onhover 2s infinite;
-}
-@keyframes onhover{
-    75%{color:rgb(8, 4, 0);}
-    60%{color:rgb(255, 98, 0);}
-    50%{color:rgb(255, 0, 0);}
-    25%{color:rgb(81, 31, 0);}  
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and ( width < 425px ) {    /* Mobile - S,M screen */
+
+    .home{  /* Main Div */
+        margin-top: 0.4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background: linear-gradient(230deg, rgba(92, 67, 67, 0.303) ,rgba(71, 0, 0, 0.474),rgba(0, 0, 0, 0.218),rgba(77, 45, 0, 0.396),rgba(92, 67, 67, 0.303));
+    }
+
+    .profile_img{   /* Inner Div-1 Contain Image */
+        text-align: center;
+        margin-top:2.5%;
+    }
+
+    #profile{
+        border-radius: 50%;
+        margin: 0% 0% 0% 8%;
+    }
+
+    .name{  /* In_Div-1 contain name */
+        flex-grow: 1;
+        align-content: center;
+        text-align: center;
+    }
+
+    #name{
+        color: white;
+        font-size: xx-large;
+        font-weight: 500;
+        font-family: "Cormorant Garamond";
+        font-variant-caps: petite-caps;
+        letter-spacing: 0.5mm;
+        font-style: oblique;
+        margin: 0% 0% 0% 0%;
+    }
+    
+    .profile_content{   /* Inner Div-2 Contain Sub DIV - Content */
+        flex-basis: 60%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0% 0% 0% 8%;
+    }
+
+    .non_link{  /*Sub_div-1 contain mail and contact */
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 0.1;
+        margin-inline-end: 10%;
+        margin-inline-start: 10%;
+        justify-content: center;
+        margin: 0% 0% 0% 6%;
+    }
+
+    .email_container , .contact_container{ 
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-direction: row;
+        flex-grow: 0.5;
+    }
+    .contact_no {
+        margin-inline-start: -6%;
+    }
+    
+    .pro_link{  /*  Sub_div-2 contain linkedin,github,resume links */
+        flex-grow: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .git_container , .linkedin_container , .resume_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-grow: 1.3;
+    }
+    .git_container{
+        flex-basis: 10%;
+    }
+    .linkedin_container{
+        flex-basis: 14%;
+    }
+    .resume_container{
+        flex-basis: 10%;
+    }
 }

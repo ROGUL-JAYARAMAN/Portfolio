@@ -1,32 +1,324 @@
-.projects{
-    padding-left: 1%;
-    grid-template-columns: 25% 75%;
-    background-color: rgb(223, 223, 223);
-    color:black;
-    align-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital@0;1&display=swap'); /* font-family: "Montserrat", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital@0;1&family=Zain:wght@200;300;400;700;800;900&display=swap'); /* font-family: "Zain", sans-serif; */
+
+.projects{   /*maain div */
+    margin-top: 0.4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color:white;
+    background: linear-gradient(230deg, rgba(89, 88, 88, 0.303) ,rgba(71, 0, 0, 0.474),rgba(0, 0, 0, 0.2),rgba(77, 45, 0, 0.396),rgba(97, 97, 97, 0.303));
 }
-#pro_tit {
-    font-size: 40px;
-    font-style: oblique;
-    font-family: serif;
-    border-right-style: double;
+
+.project_head{  /*  contain project title   */
+    flex-grow: 1;
+    flex-basis: 25%;
+    align-content: center;
     text-align: center;
-    align-content: center;
-    border-radius: 100%;
+    font-family:"Montserrat";
+    font-size: xxx-large;
+    font-variant-caps: small-caps;
+    font-weight: 500;
+    letter-spacing:1mm;
+    border-right-style: double;
+    border-color: gainsboro;
 }
+
+.project_content{   /* contain project done list  */
+    flex-grow: 2;
+    flex-basis: 53%;
+    font-family: "Zain";
+}
+
+.project_content_list{  /* contain the different project  li */
+    list-style-type:circle ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-inline-end: 8%;
+}
+
+#pro_list{
+    flex-grow: 1;
+    padding-block-end: 1%;
+}
+
 .pro_head{
-    font-size: x-large;
-    font-family: serif;
-    font-style: oblique;
-    list-style-type: circle;
+    font-size:x-large;
+    letter-spacing: 0.5mm;
+    padding-bottom: 2%;
+    padding-top: 1%;
 }
 .pro_content{
-    font-size:large;
-    font-family: serif;
-    font-style: oblique;
     padding-left: 5%;
+    font-size: larger;
 }
-.pc{
-    padding-left: 10%;
-    list-style-type: circle;
+#project_hr {  /* hr-tag */
+    margin: 0.3% 0% -0.1% 0%;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (width >= 2000px) {   /* 4k screen  */
+    .project_head{  /*  contain project title   */
+        flex-grow: 1;
+        flex-basis: 23%;
+        align-content: center;
+        text-align: center;
+        font-family:"Montserrat";
+        font-size: 75px;
+        font-variant-caps: small-caps;
+        font-weight: 500;
+        letter-spacing:1mm;
+        border-right-style: double;
+        border-color: gainsboro;
+    }
+
+    .project_content{   /* contain project done list  */
+        flex-grow: 2;
+        flex-basis: 52.5%;
+        padding-inline-start: 2%;
+        font-family: "Zain";
+    }
+
+    .project_content_list{  /* contain the different project  li */
+        list-style-type:circle ;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-inline-end: 8%;
+    }
+
+    #pro_list::marker{
+        font-size: 35px;
+        color: white;
+    }
+
+    .pro_head{
+        font-size:xxx-large;
+        letter-spacing: 1mm;
+    }
+    .pro_content{
+        padding-left: 5%;
+        font-size: xx-large;
+        letter-spacing: 0.6mm;
+        font-weight: 500;
+    }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (width >= 1024px) and (width < 2000px) {   /* lap l screen  */
+    .project_head{  /*  contain project title   */
+        flex-grow: 1;
+        flex-basis: 25%;
+        align-content: center;
+        text-align: center;
+        font-family:"Montserrat";
+        font-size: xxx-large;
+        font-variant-caps: small-caps;
+        font-weight: 500;
+        letter-spacing:1mm;
+        border-right-style: double;
+        border-color: gainsboro;
+    }
+
+    .project_content{   /* contain project done list  */
+        flex-grow: 2;
+        flex-basis: 56.5%;
+        font-family: "Zain";
+    }    
+
+    .project_content_list{  /* contain the different project  li */
+        list-style-type:circle ;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-inline-end: 8%;
+    }
+
+    #pro_list::marker{
+        font-size: 20px;
+        color: white;
+    }
+
+    .pro_head{
+        font-size:x-large;
+        letter-spacing: 0.6mm;
+        font-weight: 500;
+    }
+
+    .pro_content{
+        padding-left: 5%;
+        font-size: larger;
+        letter-spacing: 0.3mm;
+        font-weight: 400;
+    }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (width >= 768px) and (width < 1024px) {   /* lap - s screen  */
+    .project_head{  /*  contain project title   */
+        flex-grow: 1;
+        flex-basis: 25%;
+        align-content: center;
+        text-align: center;
+        font-family:"Montserrat";
+        font-size: xx-large;
+        font-variant-caps: small-caps;
+        font-weight: 500;
+        letter-spacing:1mm;
+        border-right-style: double;
+        border-color: gainsboro;
+    }
+
+    .project_content{   /* contain project done list  */
+        flex-grow: 2;
+        flex-basis: 56.5%;
+        font-family: "Zain";
+    }    
+
+    .project_content_list{  /* contain the different project  li */
+        list-style-type:circle ;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-inline-end: 8%;
+    }
+
+    #pro_list::marker{
+        font-size: 18px;
+        color: white;
+    }
+
+    .pro_head{
+        font-size:x-large;
+        letter-spacing: 0.6mm;
+        font-weight: 500;
+    }
+
+    .pro_content{
+        padding-left: 5%;
+        font-size: larger;
+        letter-spacing: 0.3mm;
+        font-weight: 300;
+    }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (width >= 500px) and (width < 768px) {   /* tab screen  */
+    .project_head{  /*  contain project title   */
+        flex-grow: 1;
+        flex-basis: 25%;
+        align-content: center;
+        text-align: center;
+        font-family:"Montserrat";
+        font-size: large;
+        font-variant-caps: small-caps;
+        font-weight: 500;
+        letter-spacing:0.8mm;
+        border-right-style: double;
+        border-color: gainsboro;
+    }
+
+    .project_content{   /* contain project done list  */
+        flex-grow: 2;
+        flex-basis: 56.5%;
+        font-family: "Zain";
+    }    
+
+    .project_content_list{  /* contain the different project  li */
+        list-style-type:circle ;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-inline-end: 8%;
+    }
+
+    #pro_list::marker{
+        font-size: 18px;
+        color: white;
+    }
+
+    .pro_head{
+        font-size:larger;
+        letter-spacing: 0.5mm;
+        font-weight: 500;
+    }
+
+    .pro_content{
+        padding-left: 5%;
+        font-size: large;
+        letter-spacing: 0.3mm;
+        font-weight: 300;
+        text-align: justify;
+    }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (width < 500px) {   /* mobile screen  */
+
+    .projects{   /*main div */
+        margin-top: 0.4%;
+        padding-top: 4%;
+        padding-bottom: 2%;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+        color:white;
+        background: linear-gradient(230deg, rgba(89, 88, 88, 0.303) ,rgba(71, 0, 0, 0.474),rgba(0, 0, 0, 0.2),rgba(77, 45, 0, 0.396),rgba(97, 97, 97, 0.303));
+    }
+
+    .project_head{  /*  contain project title   */
+        flex-grow: 1;
+        flex-basis: 25%;
+        padding-left: 2%;
+        align-content: center;
+        text-align: left;
+        font-family:"Montserrat";
+        font-size: large;
+        font-variant-caps: small-caps;
+        font-weight: 500;
+        letter-spacing:0.5mm;
+        border-right-style: none;
+        border-color: rgba(220, 220, 220, 0);
+    }
+
+    .project_content{   /* contain project done list  */
+        flex-grow: 2;
+        flex-basis: 56.5%;
+        font-family: "Zain";
+    }    
+
+    .project_content_list{  /* contain the different project  li */
+        list-style-type:circle ;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-inline-start: 8%;
+    }
+
+    #pro_list::marker{
+        font-size: 15px;
+        color: white;
+    }
+
+    .pro_head{
+        font-size:medium;
+        letter-spacing: 0.4mm;
+        font-weight: 400;
+    }
+
+    .pro_content{
+        padding-left: 5%;
+        font-size: smaller;
+        letter-spacing: 0.3mm;
+        font-weight: 300;
+        text-align: justify;
+    }
 }

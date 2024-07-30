@@ -1,33 +1,234 @@
-#about{
-    grid-template-columns: auto auto;
-    background-color: rgb(223, 223, 223);
-    color:black;
-    font-size: 3ch;
-    font-style: oblique;
-    font-family: serif;
-    text-align: justify;
-    padding-bottom: 1px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital@0;1&display=swap'); /* font-family: "Montserrat", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital@0;1&family=Zain:wght@200;300;400;700;800;900&display=swap'); /* font-family: "Zain", sans-serif; */
+
+.about {    /* Main Div */
+    margin-top: 0.4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: linear-gradient(30deg, rgba(92, 67, 67, 0.303) ,rgba(71, 0, 0, 0.474),rgba(0, 0, 0, 0.2),rgba(77, 45, 0, 0.396),rgba(92, 67, 67, 0.303));
 }
+
+.about_content{ /* About Me content para-tag */
+    flex-grow: 2;
+    flex-basis: 19%;
+    position: relative;
+    padding: 0% 5% 0% 3%;
+}
+
 #content{
-    padding-left: 75px;
-    padding-top: 50px;
-    padding-right: 125px;
-    padding-bottom: 50px;
+    text-indent: 5%;
 }
-#hr_about{
-    margin-top: 1px;
-    margin-bottom: 1px;;
+
+#about_hr {  /* hr-tag */
+    margin: 0.3% 0% -0.1% 0%;
 }
-#about_me{
-    align-content: center;
-    padding-left: 67px;
-    padding-right: 75px;
-    border-right-color: black;
-    border-right-style: double;
-    border-radius: 100%;
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (width >2000px){  /* 4k Screen */
+
+    .about_head{    /* About Me para-tag */
+        flex-grow: 1;
+        flex-basis: 10%;
+        align-content: center;
+        position:relative;
+        text-align: center;
+        border-right-style: double;
+        border-color: gainsboro;
+    }
+    
+    #about_head{
+        color:white;
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-variant-caps: small-caps;
+        letter-spacing: 1mm;
+        font-size: 75px;
+        margin: auto;
+        height:fit-content;
+        position: relative;
+    }
+    
+    #content{
+        color:white;
+        font-family: "Zain";
+        font-weight: 300;
+        font-size: xxx-large;
+        text-align: left;
+        letter-spacing: 0.25mm;
+        text-align: justify;
+    }
+
 }
-#about_con {
-    font-style: oblique;
-    font-family: unset;
-    font-size: 50px;
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media all and (width >=1024px) and (width <=2000px){ /* laptop -l screen */
+
+    .about_head{    /* About Me para-tag */
+        flex-grow: 1;
+        flex-basis: 10%;
+        align-content: center;
+        position:relative;
+        text-align: center;
+        border-right-style: double;
+        border-color: gainsboro;
+    }
+
+    #about_head{
+        color:white;
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-variant-caps: small-caps;
+        letter-spacing: 1mm;
+        font-size: xxx-large;
+        margin: auto;
+        height:fit-content;
+        position: relative;
+    }
+    
+    #content{
+        color:white;
+        font-family: "Zain";
+        font-weight: 300;
+        font-size: x-large;
+        text-align: left;
+        letter-spacing: 0.25mm;
+        text-align: justify;
+    }
+
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (width >= 768px) and (width < 1024px){    /*  lap -s screen  */
+
+    .about_head{    /* About Me para-tag */
+        flex-grow: 1;
+        flex-basis: 10%;
+        align-content: center;
+        position:relative;
+        text-align: center;
+        border-right-style: double;
+        border-color: gainsboro;
+    }
+    
+    #about_head{
+        color:white;
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-variant-caps: small-caps;
+        letter-spacing: 1mm;
+        font-size: xx-large;
+        margin: auto;
+        height:fit-content;
+        position: relative;
+    }
+    
+    #content{
+        color:white;
+        font-family: "Zain";
+        font-weight: 300;
+        font-size: larger;
+        text-align: left;
+        letter-spacing: 0.2mm;
+        text-align: justify;
+    }
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (width >= 500px) and (width < 768px){    /*  tab screen  */
+
+    .about_head{    /* About Me para-tag */
+        flex-grow: 1;
+        flex-basis: 10%;
+        align-content: center;
+        position:relative;
+        text-align: center;
+        border-right-style: double;
+        border-color: gainsboro;
+    }
+    
+    #about_head{
+        color:white;
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-variant-caps: small-caps;
+        letter-spacing: 0.5mm;
+        font-size: x-large;
+        margin: auto;
+        height:fit-content;
+        position: relative;
+    }
+    
+    #content{
+        color:white;
+        font-family: "Zain";
+        font-weight: 300;
+        font-size: large;
+        text-align: left;
+        letter-spacing: 0.2mm;
+        text-align: justify;
+    }
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (width < 500px){    /* mobile screen  */
+
+    .about {    /* Main Div */
+        margin-top: 0.4%;
+        padding-top: 4%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background: linear-gradient(30deg, rgba(92, 92, 92, 0.303) ,rgba(71, 0, 0, 0.474),rgba(0, 0, 0, 0.2),rgba(77, 45, 0, 0.396),rgba(92, 67, 67, 0.303));-color: rgba(95, 95, 95, 0.342);
+    }
+    
+    .about_head{    /* About Me para-tag */
+        flex-grow: 1;
+        flex-basis: 10%;
+        align-content: center;
+        position:relative;
+        text-align: left;
+    }
+    
+    .about_content{ /* About Me content para-tag */
+        flex-grow: 2;
+        flex-basis: 19%;
+        position: relative;
+        padding: 0% 5% 0% 3%;
+    }
+    
+    #about_head{
+        color:white;
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-variant-caps: small-caps;
+        letter-spacing: 0.5mm;
+        font-size: large;
+        margin: auto;
+        height:fit-content;
+        position: relative;
+    }
+    
+    #content{
+        color:white;
+        font-family: "Zain";
+        font-weight: 400;
+        font-size: medium;
+        text-align: left;
+        letter-spacing: 0.2mm;
+        text-align: justify;
+        text-indent: 20px;
+    }
+
 }

@@ -1,209 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
-    <link rel="stylesheet" href="Profile.css">
-    <link rel="stylesheet" href="Navigation_menu.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="Education.css">
-    <link rel="stylesheet" href="skills.css">
-    <link rel="stylesheet" href="projects.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="Navigation_menu.css" />
+    <link rel="stylesheet" href="Profile.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="Education.css" />
+    <link rel="stylesheet" href="skills.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <style>
+      body {
+        background-image: url(background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        user-select: auto !important;
+        backdrop-filter: brightness(0.5);
+      }
+    </style>
+  </head>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------------->
+  <body>
     <header>
-        <div class="menu_bar">
-            <nav class="menu">
-                <ol class="menu_items">
-                    <li><a href="#home" id="link">Home</a></li>
-                    <li><a href="#about" id="link">About</a></li>
-                    <li><a href="#education" id="link">Education</a></li>
-                    <li><a href="#skills" id="link">Skills</a></li>
-                    <li><a href="#projects" id="link">Projects</a></li>
-                </ol>
-            </nav>
-        </div>
+      <div class="menu_bar">
+        <nav>
+          <ol class="menu_items">
+            <li class="menu_li" id="home_menu">
+              <a href="#home" class="m_link">Home</a>
+            </li>
+            <li class="menu_li" id="about_menu">
+              <a href="#about" class="m_link">About</a>
+            </li>
+            <li class="menu_li" id="edu_menu">
+              <a href="#education" class="m_link">Education</a>
+            </li>
+            <li class="menu_li" id="skill_menu">
+              <a href="#skills" class="m_link">Skills</a>
+            </li>
+            <li class="menu_li" id="project_menu">
+              <a href="#projects" class="m_link">Projects</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
     </header>
-    <hr id="menu_hr"/>
-<!---------------------------------------------------------------------------------------------------------------------------------------------------->
-    <div class="my_profile" id="home">
-        <div class="profile">
-            <img src="My image.jpg" alt="MY Photo" id="my_photo" class="photo">
+    <hr id="menu_hr" />
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="home" id="home">
+      <div class="profile_img">
+        <img src="Myimage.png" alt="Profile_Photo" id="profile" />
+      </div>
+      <div class="profile_content">
+        <div class="name">
+          <p id="name">Rogul Jayaraman</p>
         </div>
-        <div class="my_info">
-            <div class="name">
-                <h3 id="name"><i>ROGUL JAYARAMAN</i></h3>
+        <div class="non_link">
+          <div class="email_container">
+            <div class="email_icon">
+              <img src="email_icon.png" alt="email_icon" id="email_icon" />
             </div>
-            <div class="info">
-                <div class="mail_flex">
-                    <div class="mail_icon">
-                        <img src="email_icon.png" alt="email_icon" id="email_icon" height="19px" width="19px" style="color: rgb(0, 0, 0);">
-                    </div>
-                    <div class="mail_title" style="margin-top: -18px; padding-left: 10px;">
-                        <p>jayaramanrogul@gmail.com</p>
-                    </div>
-                    <div class="contact_logo">
-                        <img src="contact_icon.png" alt="contact_logo" id="contact_logo" height="19px" width="19px">
-                    </div>
-                    <div class="contact_title" style="margin-top:-18px;padding-left: 8px;">
-                        <p>+91 9360504096</p>
-                    </div>
-                </div>
-                <div class="Links">
-                    <div id="git_image">
-                        <img src="git_icon.png" width="19px" hight="19px">
-                    </div>
-                    <div id="git_link">
-                        <a href="https://github.com/ROGUL-JAYARAMAN" title="Click to open Github account" id="git_ref">Github</a>
-                    </div>
-                    <div id="Linkedin_image">
-                        <img src="linkedin_icon.png" width="19px" hight="19px" style="padding-left: 45px;">
-                    </div>
-                    <div id="linkedin_link">
-                        <a href="" title="Click to open Linkesin account" id="linkedin" style="margin-top: -18px; padding-left:7px;">Linkedin</a>
-                    </div>
-                    <div id="resume_image">
-                        <img src="resume_icon.png" width="19px" hight="19px">
-                    </div>
-                    <div id="resume_link">
-                        <a href="https://www.linkedin.com/in/rogul-jayaraman/" title="Click to view Resume" id="resume" style="margin-top: -18px;margin-left: 5px;">Resume</a>
-                    </div>
-                </div>
-                </div>
+            <div class="email_name">
+              <p id="email_name">jayaramanrogul@gmail.com</p>
             </div>
+          </div>
+          <div class="contact_container">
+            <div class="contact_icon">
+              <img
+                src="contact_icon.png"
+                alt="contact_icon"
+                id="contact_icon"
+              />
+            </div>
+            <div class="contact_no">
+              <p id="contact_no">+91 93605-04096</p>
+            </div>
+          </div>
         </div>
+        <div class="pro_link">
+          <div class="git_container">
+            <div class="git_icon">
+              <img src="git_icon.png" alt="git_icon" id="git_icon" />
+            </div>
+            <div class="git_link">
+              <a
+                href="https://github.com/ROGUL-JAYARAMAN"
+                title="Click to open Github account"
+                id="git_link"
+                >Github</a
+              >
+            </div>
+          </div>
+          <div class="linkedin_container">
+            <div class="linkedin_icon">
+              <img
+                src="linkedin_icon.png"
+                alt="Linkedin_icon"
+                id="linkedin_icon"
+              />
+            </div>
+            <div class="linkedin_link">
+              <a
+                href="https://www.linkedin.com/in/rogul-jayaraman/"
+                title="Click to open Linkesin account"
+                id="linkedin_link"
+                >Linkedin</a
+              >
+            </div>
+          </div>
+          <div class="resume_container">
+            <div class="resume_icon">
+              <img src="resume_icon.png" alt="resume_icon" id="resume_icon" />
+            </div>
+            <div class="resume_link">
+              <a
+                href="https://www.linkedin.com/in/rogul-jayaraman/"
+                title="Click to open Linkesin account"
+                id="resume_link"
+                >Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <hr class="info_hr"/>
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <div class="About" id="about" style="display: grid;">
-        <div id="about_me">
-            <p id="about_con"><b>ABOUT ME</b></p>
-        </div>
-        <div>
-        <p id="content">I am an <b>Electronics and Communication Engineering </b>student at Sri Krishna College of Engineering and Technology, with a strong foundation in embedded systems, IoT, and web development. 
-            Proficient in <b>C++, Java, Python, and HTML</b>, I have substantial experience in <b>data structures, DBMS, and problem-solving.</b> 
-            My projects include developing a smart irrigation management system and creating a responsive website. 
-            I gained hands-on experience in embedded systems during in-plant training at Zero Value Infotech, participating in workshops, collaborative projects, and live demonstrations. 
-            I am eager to apply my technical skills to contribute to innovative projects in a dynamic environment.</p>
-        </div>
+    <hr id="profile_hr" />
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="about" id="about">
+      <div class="about_head">
+        <p id="about_head">About Me</p>
+      </div>
+      <div class="about_content">
+        <p id="content">
+          I am an <b>Electronics and Communication Engineering </b>student at
+          Sri Krishna College of Engineering and Technology, with a strong
+          foundation in embedded systems, IoT, and web development. Proficient
+          in <b>C++, Java, Python, and HTML</b>, I have substantial experience
+          in <b>data structures, DBMS, and problem-solving.</b> My projects
+          include developing a smart irrigation management system and creating a
+          responsive website. I gained hands-on experience in embedded systems
+          during in-plant training at Zero Value Infotech, participating in
+          workshops, collaborative projects, and live demonstrations. I am eager
+          to apply my technical skills to contribute to innovative projects in a
+          dynamic environment.
+        </p>
+      </div>
     </div>
-    <hr id="hr_about"/>
-<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <div class="Education" id="education" style="display:grid;justify-items: start;align-items: stretch;align-content: space-between;justify-content: start;"">
-        <div id="Edu_tit">
-            <p id="edu_par"><b>EDUCATION</b></p>
-        </div>
-        <div class="edu_content" style="display:grid;">
-            <ul class="eduacation_content">
-                <li><div class="college" style="display:grid;">
-                    <div id="course_n" class="col_course">
-                        <p><b>Bachelor of Engineering in Electronics and Communication Engineering ( 3 <sup>rd </sup> year )</b></p>
-                    </div>
-                    <div id="col_info">
-                        <p>Sri Krishna College of Engineering and Technology</p>
-                        <p>Kuniyamuthur,Coimbatore,Tamilnadu</p>
-                        <p>CGPA : 8.0</p>
-                    </div>
-                </div></li>
-                <li><div calss="hsc" style="display: grid;">
-                    <div id="course_n" class="hsc_course">
-                        <p><b>Higher Secondary</b></p>
-                    </div>
-                    <div id="hsc_info">
-                        <p>State Board</p>
-                        <p>Percentage : 95 %</p>
-                    </div>
-                </div></li>
-            </ul>
-        </div>
+    <hr id="about_hr" />
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="education" id="education">
+      <div class="education_head">
+        <p id="education_head">Education</p>
+      </div>
+      <ul class="education_content">
+        <li id="education_content">
+          <div class="course1_head">
+            <p id="course1_head">
+              Bachelor of Engineering in Electronics and Communication ( 3
+              <sup>rd </sup> year )
+            </p>
+          </div>
+          <div class="course1_content">
+            <p id="course1_content">
+              Sri Krishna College of Engineering and Technology <br />
+              Kuniyamuthur, Coimbatore, Tamilnadu <br />
+              CGPA : 8.0
+            </p>
+          </div>
+        </li>
+        <li id="education_content">
+          <div class="course2_head">
+            <p id="course2_head">Higher Secondary</p>
+          </div>
+          <div class="course2_content">
+            <p id="course2_content">
+              State Board <br />
+              Percentage : 95 %
+            </p>
+          </div>
+        </li>
+      </ul>
     </div>
-    <hr id="hr_edu"/>
-<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <div class="Skills" id="skills" style="display: grid;">
-        <div class="skill_tit">
-            <p id="skill_title"><b>SKILLS</b></p>
+    <hr id="education_hr" />
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="skills" id="skills">
+      <div class="skills_head">Skills</div>
+      <div class="skills_content">
+        <div class="skl_list">
+          <div class="skl_head">Programming Languages</div>
+          <div class="skl_cont">
+            <li>C++</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>DBMS</li>
+          </div>
         </div>
-        <div id="skill_set" style="display: grid;">
-            <ul id="sk_head">
-                <li>
-                    <div id="skill_1" class="sh" style="display: grid;">
-                        <p><b>Programming Languages</b></p>
-                    </div>
-                    <div id="skill_1_con" class="sc">
-                        <ul id="sk_cont">
-                            <li>C++</li>
-                            <li>Java</li>
-                            <li>Python</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>DBMS</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div id="skill_2" class="sh">
-                        <p><b>Embedded Systems and IOT</b></p>
-                    </div>
-                    <div id="skill_2_con" class="sc">
-                        <ul id="sk_cont">
-                            <li>Arduino</li>
-                            <li>ESP32</li>
-                            <li>NodeMCU</li>
-                            <li>GPS</li>
-                            <li>GSM</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div id="skill_3" class="sh">
-                        <p><b>Other Skills</b></p>
-                    </div>
-                    <div id="skill_3_con" class="sc">
-                        <ul id="sk_cont">
-                            <li>Data Structures</li>
-                            <li>Problem-Solving</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div id="skill_4" class="sh">
-                        <p><b>Tools and Softwares</b></p>
-                    </div>
-                    <div id="skill_4_con" class="sc">
-                        <ul id="sk_cont">
-                            <li>Arduino IDE</li>
-                            <li>Proteus</li>
-                            <li>MS Word</li>
-                            <li>MS PowerPoint</li>
-                            <li>MS Excel</li>
-                            <li>VS Code</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+        <div class="skl_list">
+          <div class="skl_head">Other Skills</div>
+          <div class="skl_cont">
+            <li>Data Structures</li>
+            <li>Problem-Solving</li>
+          </div>
         </div>
+        <div class="skl_list">
+          <div class="skl_head">Embedded Systems and IOT</div>
+          <div class="skl_cont">
+            <li>Arduino</li>
+            <li>ESP32</li>
+            <li>NodeMCU</li>
+            <li>GPS</li>
+            <li>GSM</li>
+          </div>
+        </div>
+        <div class="skl_list">
+          <div class="skl_head">Tools and Softwares</div>
+          <div class="skl_cont">
+            <li>Arduino IDE</li>
+            <li>Proteus</li>
+            <li>MS Word</li>
+            <li>MS PowerPoint</li>
+            <li>MS Excel</li>
+            <li>VS Code</li>
+          </div>
+        </div>
+      </div>
     </div>
-    <hr id="skill_hr"/>
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <div class="projects" id="projects" style="display: grid;">
-        <div id="pro_tit">
-            <p id="pro_cont"><b>PROJECTS</b></p>
-        </div>
-        <div class="pro_cont" id="pro_cont" style="display: grid;">
-            <ul class="pc">
-                <li><div class="pro_head"><p><b>Smart Irrigation Management</b></p></div>
-                <div class="pro_content"><p>Utilized embedded systems and IoT to develop a smart irrigation solution.<br>
-                    Implemented automated water supply based on soil moisture levels.<br>
-                    Used sensors and actuators to control the irrigation process, enhancing water conservation.<br>
-                    Duration: 3 months</p></div></li>
-                <li><div class="pro_head"><p><b>Developed a Login Page</b></p></div>
-                <div class="pro_content"><p>Technologies Used: HTML, CSS<br>
-                    Description: Designed and implemented a responsive login page, focusing on user-friendly navigation and a clean, modern interface.<br>
-                    Duration: 10 days</p></div></li>
-            </ul>
-        </div>
+    <hr id="skill_hr" />
+    <!--------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="projects" id="projects">
+      <div class="project_head">Projects</div>
+      <div class="project_content">
+        <ul class="project_content_list">
+          <li id="pro_list">
+            <div class="pro_head">Smart Irrigation Management</div>
+            <div class="pro_content">
+              Utilized embedded systems and IoT to develop a smart irrigation
+              solution.<br /> 
+              Implemented automated water supply based on soil moisture
+              levels.<br />
+              Used sensors and actuators to control the irrigation process,
+              enhancing water conservation.<br />
+              Duration: 3 months
+            </div>
+          </li>
+          <li id="pro_list">
+            <div class="pro_head">Developed a Login Page</div>
+            <div class="pro_content">
+              Technologies Used: HTML, CSS<br />
+              Description: Designed and implemented a responsive login page,
+              focusing on user-friendly navigation and a clean, modern
+              interface.<br />
+              Duration: 10 days
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-</body>
+    <hr id="project_hr" />
+  </body>
 </html>
